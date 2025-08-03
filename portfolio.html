@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoHub – Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+      }
+      th, td {
+        padding: 0.75rem 1rem;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      th {
+        color: var(--primary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <div class="logo">CryptoHub</div>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="markets.html">Märkte</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <section class="section">
+      <h1>Demo‑Portfolio</h1>
+      <p>
+        Dieses Portfolio dient nur zu Demonstrationszwecken und zeigt fiktive
+        Bestände. Die aktuellen Preise werden, sofern möglich, live von
+        CoinGecko geladen. Sollte die Abfrage fehlschlagen, werden statische
+        Werte angezeigt.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Coin</th>
+            <th>Menge</th>
+            <th>Preis (USD)</th>
+            <th>Wert (USD)</th>
+          </tr>
+        </thead>
+        <tbody id="portfolio-body">
+          <!-- Portfolio rows will be injected here -->
+        </tbody>
+      </table>
+      <p id="portfolio-error" style="color: #ff6b6b; margin-top: 1rem"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      © 2025 CryptoHub – Alle Rechte vorbehalten.
+    </footer>
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>

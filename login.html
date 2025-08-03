@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoHub – Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <div class="logo">CryptoHub</div>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="markets.html">Märkte</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <section class="section">
+      <h1>Anmeldung</h1>
+      <p>
+        Diese Demo‑Anmeldemaske speichert keine realen Daten. Geben Sie einen
+        Benutzernamen und ein Passwort ein, um sich anzumelden. Die
+        Informationen werden lediglich im Browser gespeichert und dienen nur
+        Illustrationszwecken.
+      </p>
+      <form id="login-form" style="max-width: 400px; margin: 0 auto">
+        <div style="margin-bottom: 1rem">
+          <label for="username" style="display: block; margin-bottom: 0.3rem"
+            >Benutzername</label
+          >
+          <input
+            type="text"
+            id="username"
+            required
+            style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #444"
+          />
+        </div>
+        <div style="margin-bottom: 1rem">
+          <label for="password" style="display: block; margin-bottom: 0.3rem"
+            >Passwort</label
+          >
+          <input
+            type="password"
+            id="password"
+            required
+            style="width: 100%; padding: 0.5rem; border-radius: 4px; border: 1px solid #444"
+          />
+        </div>
+        <button type="submit" class="button">Anmelden</button>
+      </form>
+      <p id="login-status" style="text-align: center; margin-top: 1rem"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      © 2025 CryptoHub – Alle Rechte vorbehalten.
+    </footer>
+
+    <script src="login.js"></script>
+  </body>
+</html>
